@@ -3,16 +3,31 @@
 
 <head>
   <meta charset="utf-8">
+
+  <!--set viewpoint-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>MUSE | Music App</title>
+  <!--css embed-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <!--custom font-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 
 
 <body>
   <header>
 
-    <div>
+    <div id="nav_bar">
+      <img src="img/website/banner@2x.png" alt="Website Banner">
       <nav>
-        <ul>
+        <ul class="makeUppercase">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="about.html#skills">My Skills</a></li>
@@ -24,17 +39,18 @@
 
   <main>
     <div>
-      <div>
+      <div id="hero">
         <h1>MUSE Music App</h1>
         <h2>UI</h2>
       </div>
     </div>
 
-      <div>
+      <div id="description">
         <h3>Role:</h3>
         <ul>
           <li>UI design</li>
-          <li>User Testing</li>
+          <li>Wireframing</li>
+          <li>Prototyping</li>
         </ul>
 
         <h3>Duration:</h3>
@@ -45,7 +61,7 @@
       </div>
 
       <div>
-        <div>
+        <div id="intro">
           <h3>Overview</h3>
           <p>MUSE was the very first mobile design I created about 1 week into my UI certification
             program. From start to finish it took a total of 5 weeks.</p>
@@ -80,7 +96,7 @@
       </div>
 
       <div>
-    <a href="https://www.behance.net/gallery/121995799/MUSE-Music-App" target="_blank">Read Full Casestudy</a>
+    <a href="https://www.behance.net/gallery/121995799/MUSE-Music-App" class="button" target="_blank">Read Full Casestudy</a>
       </div>
     </div>
   </main>
@@ -93,7 +109,7 @@
           Like my work? Reach out to talk about future projects.
         </p>
         <div>
-          <a href="mailto:lillian.9@gmail.com">Email me</a>
+          <a href="mailto:lillian.9@gmail.com" class="button contact">Email me</a>
         </div>
 
 

@@ -1,0 +1,123 @@
+/*
+Colors used:
+Primary Color (almost-white): #fefefe;
+Secondary Color (Black): #000000;
+*/
+
+
+body {
+  background-color: #fefefe;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #000;
+}
+
+img {
+  width: 100%;
+}
+
+/* header styling */
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.00em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.50em;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 300;
+}
+
+/* hyperlink styling */
+a {
+    color:#000;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a:visited {
+  color:  #000;
+}
+
+a:hover {
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    cursor:pointer;
+}
+
+a:active {
+  color: #303091;
+}
+
+/* button styling */
+
+.button {
+  display: inline-block;
+  background-color: #000;
+  color: #ffffff !important; /* needed to override the default link color */
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+  border: 3px solid #000;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #000000 !important;
+  font-size: 16px;
+  border: 3px solid #000000;
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: #000;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+  border: 3px solid #000;
+}
+
+.button.contact:hover {
+  background-color: #000;
+  color: #ffffff !important;
+  font-size: 16px;
+   opacity: 0.5;
+}
+
+#description {
+  background-color: #000;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #F3F3F3;
+}
+
+/* future use */
+
+.makeUppercase {
+	text-transform: uppercase;
+}
+.makeLowercase {
+	text-transform: lowercase;
+}
+
+.underlineMe {
+	text-decoration: underline;
+}

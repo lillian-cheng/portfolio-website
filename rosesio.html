@@ -3,18 +3,31 @@
 
 <head>
   <meta charset="utf-8">
+
+  <!--set viewpoint-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Rosesio | E-Commerce App</title>
+  <!--css embed-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <!--custom font-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 
 
 <body>
   <header>
 
-    <div>
-
-      <img src="img/website/banner.png" alt="Website Banner">
+    <div id="nav_bar">
+      <img src="img/website/banner@2x.png" alt="Website Banner">
       <nav>
-        <ul>
+        <ul class="makeUppercase">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="about.html#skills">My Skills</a></li>
@@ -26,13 +39,13 @@
 
   <main>
     <div>
-      <div>
+      <div id="hero">
         <h1>Rosesio E-Commerce App</h1>
         <h2>UI/UX</h2>
       </div>
     </div>
 
-    <div>
+    <div id="description">
       <div>
         <h3>Role:</h3>
           <ul>
@@ -54,7 +67,7 @@
     </div>
 
     <div>
-      <div>
+      <div id="intro">
         <h3>Overview</h3>
         <p>Rosesio is a fine jewelry brand that I created for my final UI project.
           I got to design not only the web app itself, but also took full control
@@ -83,7 +96,7 @@
       </div>
 
       <div>
-        <a href="https://www.behance.net/gallery/121997671/Rosesio-Jewelry-E-Commerce">Read Full Casestudy</a>
+        <a href="https://www.behance.net/gallery/121997671/Rosesio-Jewelry-E-Commerce" class="button" target="_blank">Read Full Casestudy</a>
       </div>
     </div>
   </main>
@@ -96,7 +109,7 @@
         Like my work? Reach out to talk about future projects.
       </p>
       <div>
-        <a href="mailto:lillian.9@gmail.com">Email me</a>
+        <a href="mailto:lillian.9@gmail.com" class="button contact">Email me</a>
       </div>
 
 
