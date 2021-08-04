@@ -4,6 +4,132 @@ Primary Color (almost-white): #fefefe;
 Secondary Color (Black): #000000;
 */
 
+* {
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #fff;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  box-shadow: 0px 2px 16px 0px rgba(50, 50, 50, 0.5);
+
+}
+
+main {
+  padding-top: 133px;
+  margin: 40px;
+}
+
+/* Layout Styling */
+
+.logo{
+  padding: 0 15px;
+  max-width: 90px;
+  margin-top: 9px;
+}
+
+.container{
+  max-width: 1920px;
+   padding: 0 15px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.portrait{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.block {
+  list-style-type: none;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+main:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clear{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#work{
+  padding-top: 250px;
+}
+
+#work .row{
+  margin: 45px 0;
+}
+
+#hero{
+  background-color: #fff;
+  padding: 30px 0;
+  display: inline-block;
+
+}
+
+#hero h1{
+  margin-left: 400px;
+  font-weight: 200;
+  transition: all 0.8s;
+  transform: scale(1.8);
+
+}
+
+#hero p{
+  width: 53%;
+  margin-left: 40px;
+  padding: 50px;
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+#hero .b{
+  font-weight: 900;
+}
+
+#hero a{
+  margin-left: 90px;
+}
+
+#hero img{
+  right: 250px;
+  top: 280px;
+  bottom: 0;
+  position: absolute;
+  max-width: 650px;
+  float: right;
+}
+
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 30px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #4a4a4a;
+}
 
 body {
   background-color: #fefefe;
@@ -42,19 +168,25 @@ h4 {
   font-weight: 300;
 }
 
+#description {
+  background-color: #000;
+  color: #ffffff;
+}
+
 /* hyperlink styling */
 a {
     color:#000;
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
+
 }
 a:visited {
   color:  #000;
 }
 
 a:hover {
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: underline;
     text-decoration-thickness: 3px;
     cursor:pointer;
@@ -84,7 +216,7 @@ a:active {
   text-decoration: none;
 }
 
-.button.contact {
+.button.resume {
   background-color: #000;
   color: #ffffff;
   font-size: 16px;
@@ -93,31 +225,87 @@ a:active {
   border: 3px solid #000;
 }
 
-.button.contact:hover {
+.button.resume:hover {
   background-color: #000;
   color: #ffffff !important;
   font-size: 16px;
    opacity: 0.5;
 }
 
-#description {
-  background-color: #000;
-  color: #ffffff;
+.button.contact {
+  background-color: transparent;
+  color: #000000 !important;
+  font-size: 16px;
+  border: 3px solid #000000;
+  text-decoration: none;
 }
 
+.button.contact:hover {
+  background-color: #000;
+  color: #ffffff !important;
+  font-size: 16px;
+}
+
+
+
+/* footer styling */
+
 footer {
-  background-color: #F3F3F3;
+  border-top: 5px solid black;
+  background-color: #fff;
+  padding-top: 50px;
+  margin: 40px;
+}
+
+footer p{
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.footer_block{
+  list-style-type: none;
+  float: left;
+  text-align: left;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 2em;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.copyright{
+  padding-top: 20px;
+  height: 8px;
+}
+
+/*social icons */
+
+.social{
+  text-align: center;
+}
+
+.social a{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social svg{
+  width:30px;
+  height: auto;
+  padding-top: 50px;
 }
 
 /* future use */
 
-.makeUppercase {
-	text-transform: uppercase;
-}
-.makeLowercase {
-	text-transform: lowercase;
-}
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  }
 
-.underlineMe {
-	text-decoration: underline;
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 10px;
+  }
 }
