@@ -285,6 +285,10 @@ footer p {
   color: #fff;
 }
 
+#app h1{
+  text-align: center;
+}
+
 /* animation */
 @keyframes slidein {
   0% {
@@ -413,7 +417,9 @@ footer p {
     padding: 10px;
     box-sizing: border-box;
   }
+
 }
+
 
 /* Large devices (1024px+ )*/
 @media only screen and (min-width: 1024px) {
@@ -456,6 +462,8 @@ footer p {
     width: 450px;
     max-width: 600px;
   }
+
+
 
   .container {
     max-width: 1200px;
