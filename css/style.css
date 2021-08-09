@@ -187,8 +187,16 @@ a.button.contact:hover {
   font-size: 16px;
 }
 
+.button-container{
+  padding: 20px 0;
+}
+
 .centered-button {
   text-align: center;
+}
+
+.hide-mobile{
+  display: none;
 }
 
 /* footer styling */
@@ -256,7 +264,11 @@ footer p {
 #hero {
   background-color: #fff;
   padding: 30px 0;
-  display: inline-block;
+}
+
+#hero .container{
+  padding-bottom: 30px;
+  overflow: hidden;
 }
 
 #hero h1 {
@@ -355,13 +367,17 @@ footer p {
 
 /*----------------------------------------------------------------------------------------------------------------------------------------*/
 
-[class*="col-"] {
-  float: left;
-  padding: 0 25px;
-}
+
 
 /* Medium devices 640px+ */
 @media only screen and (min-width: 640px) {
+  .hide-mobile{
+    display: block;
+  }
+  .hide-tablet{
+    display: none;
+  }
+
   header {
     text-align: unset;
     z-index: 1;
@@ -374,19 +390,14 @@ footer p {
   }
 
   #hero img {
-    position: relative;
-    top: -200px;
-    float: right;
     width: 100%;
     height: auto;
-    max-width: 400px;
     animation-duration: .8s;
     animation-name: slidein;
   }
 
   #hero p {
     margin: 0;
-    width: 50%;
     font-size: 22px;
   }
 
@@ -402,9 +413,23 @@ footer p {
     margin-top: 0;
   }
 
-  .col-md-6 {
-    width: 60%;
+  [class*="col-"] {
+    float: left;
+    padding: 0 25px;
   }
+
+.col-md-1 {width: 8.33%;}
+.col-md-2 {width: 16.66%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33%;}
+.col-md-5 {width: 41.66%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33%;}
+.col-md-8 {width: 66.66%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33%;}
+.col-md-11 {width: 91.66%;}
+.col-md-12 {width: 100%;}
 
   .work_block {
     font-size: .9em;
@@ -423,6 +448,20 @@ footer p {
 
 /* Large devices (1024px+ )*/
 @media only screen and (min-width: 1024px) {
+
+  .hide-tablet{
+    display: block;
+  }
+
+  .hide-desktop{
+    display: none;
+  }
+
+.nav-container{
+  max-width: auto;
+  margin-auto;
+  
+}
   .container {
     max-width: 1200px;
     margin-left: auto;
@@ -449,21 +488,25 @@ footer p {
   }
 
   #hero p {
-    width: 53%;
     margin-top: 50px;
     font-weight: bolder;
     font-size: 24px;
   }
 
-  #hero img {
-    position: relative;
-    top: -275px;
-    float: right;
-    width: 450px;
-    max-width: 600px;
-  }
 
 
+  .col-lg-1 {width: 8.33%;}
+  .col-lg-2 {width: 16.66%;}
+  .col-lg-3 {width: 25%;}
+  .col-lg-4 {width: 33.33%;}
+  .col-lg-5 {width: 41.66%;}
+  .col-lg-6 {width: 50%;}
+  .col-lg-7 {width: 58.33%;}
+  .col-lg-8 {width: 66.66%;}
+  .col-lg-9 {width: 75%;}
+  .col-lg-10 {width: 83.33%;}
+  .col-lg-11 {width: 91.66%;}
+  .col-lg-12 {width: 100%;}
 
   .container {
     max-width: 1200px;
@@ -479,27 +522,14 @@ footer p {
 /* X-large devices (1440px+ */
 @media only screen and (min-width: 1440px) {
   #hero h1 {
-    margin-left: 180px;
     font-size: 62px;
     animation-duration: .8s;
     animation-name: slidein;
   }
 
   #hero p {
-    margin-left: 180px;
-    width: 53%;
     font-weight: bolder;
     font-size: 24px;
   }
 
-  #hero img {
-    width: 580px;
-    float: right;
-    position: relative;
-    right: -400px;
-  }
-
-  #hero .button {
-    margin-left: 180px;
-  }
 }
