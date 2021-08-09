@@ -459,8 +459,8 @@ footer p {
 
 .nav-container{
   max-width: auto;
-  margin-auto;
-  
+  margin: 0 20px;
+
 }
   .container {
     max-width: 1200px;
