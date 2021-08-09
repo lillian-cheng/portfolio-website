@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/61bb5da70f.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -25,14 +26,20 @@
   <header>
 
     <div class="nav-container">
-      <img src="img/website/banner@2x.png" class="logo" alt="Website Banner">
-      <nav id="menu">
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" target="_self">
+          <img src="img/website/banner@2x.png" class="logo" alt="Website Banner">
+        </a>
+        <nav id="menu">
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars">
+                </i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -61,7 +68,7 @@
             </picture>
             <div class="centered-button hide-desktop hide-tablet">
               <a href="about.html" class="button">Read more</a>
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1204,6 +1211,9 @@
 
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 

@@ -12,27 +12,33 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <!--custom font-->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/61bb5da70f.js" crossorigin="anonymous"></script>
 
 </head>
-
 
 <body>
   <header>
 
-    <div id="container">
-      <img src="img/website/banner@2x.png" class="logo" alt="Website Banner">
-      <nav id="menu">
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div id="nav-container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" target="_self">
+          <img src="img/website/banner@2x.png" class="logo" alt="Website Banner">
+        </a>
+        <nav id="menu">
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars">
+                </i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -47,108 +53,121 @@
           <img src="img/muse/muse@2x.png" alt="MUSE Music Mockup">
         </picture>
 
-      <div id="description">
-        <div>
-        <h3>Role:</h3>
-        <ul>
-          <li>UI design</li>
-          <li>Wireframing</li>
-          <li>Prototyping</li>
-        </ul>
-      </div>
+        <div id="description">
+          <div>
+            <h3>Role:</h3>
+            <ul>
+              <li>UI design</li>
+              <li>Wireframing</li>
+              <li>Prototyping</li>
+            </ul>
+          </div>
 
-      <div>
-        <h3>Duration:</h3>
-        <p class="date">Sept-October 2020</p>
-      </div>
+          <div>
+            <h3>Duration:</h3>
+            <p class="date">Sept-October 2020</p>
+          </div>
 
-      <div>
-        <h3>Tools:</h3>
-        <p class="tool_name">Adobe XD, Photoshop, Pen & Paper</p>
-    </div>
-  </div>
+          <div>
+            <h3>Tools:</h3>
+            <p class="tool_name">Adobe XD, Photoshop, Pen & Paper</p>
+          </div>
+        </div>
 
 
-      <div id="intro">
-        <div class="row">
-          <h3>Overview</h3>
-          <p>MUSE was the very first mobile design I created about 1 week into my UI certification
-            program. From start to finish it took a total of 5 weeks.</p>
+        <div id="intro">
+          <div class="row">
+            <h3>Overview</h3>
+            <p>MUSE was the very first mobile design I created about 1 week into my UI certification
+              program. From start to finish it took a total of 5 weeks.</p>
 
-          <h3>Ideology</h3>
+            <h3>Ideology</h3>
 
-          <p>I picked a music app as my first project because I’m familiar with this type of
-          application. I love music and I’ve been a user of Spotify & SoundCloud for years.</p>
+            <p>I picked a music app as my first project because I’m familiar with this type of
+              application. I love music and I’ve been a user of Spotify & SoundCloud for years.</p>
 
-          <p>A lot of music player apps tend to use a solid color (like black or white) for
-          the background and overall theme, but I would love to create a more vibrant and
-          colorful interface for users with different visual preferences.</p>
+            <p>A lot of music player apps tend to use a solid color (like black or white) for
+              the background and overall theme, but I would love to create a more vibrant and
+              colorful interface for users with different visual preferences.</p>
 
-          <h3>Key Functionality for MUSE</h3>
-          <ul><li>Add, delete a song from a playlist - Data Management</li>
-          <li>Providing the user song suggestions (recently listened, now trending, suggested etc.) when editing their playlist </li>
-          <li>A convenient way to delete a song</li>
-          <li>Search a song through the name, artist or keywords - Gathering Input</li>
-          <li>When user access the search function, a search bar and search suggestions appear</li>
-          <li>Play, pause, skip to the next song - Navigation</li>
-          <li>While a song is playing, allow users to play, pause, repeat, skip or go back to last song</li>
-          <li>On this page, include other functions like return to the home page, add to playlist, share etc.</li>
-          </ul>
+            <h3>Key Functionality for MUSE</h3>
+            <ul>
+              <li>Add, delete a song from a playlist - Data Management</li>
+              <li>Providing the user song suggestions (recently listened, now trending, suggested etc.) when editing their playlist </li>
+              <li>A convenient way to delete a song</li>
+              <li>Search a song through the name, artist or keywords - Gathering Input</li>
+              <li>When user access the search function, a search bar and search suggestions appear</li>
+              <li>Play, pause, skip to the next song - Navigation</li>
+              <li>While a song is playing, allow users to play, pause, repeat, skip or go back to last song</li>
+              <li>On this page, include other functions like return to the home page, add to playlist, share etc.</li>
+            </ul>
 
-          <!--Low-Fidelity Wireframes
+            <!--Low-Fidelity Wireframes
           (insert here)
 
           High-Fidelity Wireframes
           (insert here)-->
-      </div>
+          </div>
 
-      <div class="row centered-button">
-    <a href="https://www.behance.net/gallery/121995799/MUSE-Music-App" class="button" target="_blank">Read Full Casestudy</a>
-      </div>
+          <div class="row centered-button">
+            <a href="https://www.behance.net/gallery/121995799/MUSE-Music-App" class="button" target="_blank">Read Full Casestudy</a>
+          </div>
 
-    </div>
+        </div>
+      </div>
     </div>
   </main>
 
 
-    <footer id="contact">
-      <div class="social container">
-        <h2>Get in Touch</h2>
-        <p>
-          Like my work? Reach out to talk about future projects.
-        </p>
-        <div>
-          <a href="mailto:lillian.9@gmail.com" class="button contact">Email me</a>
-        </div>
+  <footer id="contact">
+    <div class="social container">
+      <h2>Get in Touch</h2>
+      <p>
+        Like my work? Reach out to talk about future projects.
+      </p>
+      <div>
+        <a href="mailto:lillian.9@gmail.com" class="button contact">Email me</a>
+      </div>
 
 
-        <div>
-          <!--Behance Link-->
-            <a href="http://www.behance.net/lilliancheng" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18 8.101h-4v-.875h4v.875zm.84 6.125c-.77 2.258-5.949 2.966-5.949-1.56 0-4.583 5.508-4.377 6.053-.872.045.295.062.693.055 1.249h-4.41c-.104 1.715 1.76 1.932 2.404 1.184h1.847zm-4.211-2.333h2.624c-.115-1.687-2.36-1.81-2.624 0zm-5.858 4.076h-3.771v-8.73h4.056c3.194.047 3.255 3.176 1.587 4.028 2.019.735 2.086 4.702-1.872 4.702zm-1.896-5.134h1.965c1.464 0 1.696-1.859-.182-1.859h-1.783v1.859zm1.854 1.454h-1.854v1.947h1.824c1.782-.001 1.673-1.947.03-1.947zm3.271-10.289c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z"/></svg>
-            </a>
+      <div>
+        <!--Behance Link-->
+        <a href="http://www.behance.net/lilliancheng" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M18 8.101h-4v-.875h4v.875zm.84 6.125c-.77 2.258-5.949 2.966-5.949-1.56 0-4.583 5.508-4.377 6.053-.872.045.295.062.693.055 1.249h-4.41c-.104 1.715 1.76 1.932 2.404 1.184h1.847zm-4.211-2.333h2.624c-.115-1.687-2.36-1.81-2.624 0zm-5.858 4.076h-3.771v-8.73h4.056c3.194.047 3.255 3.176 1.587 4.028 2.019.735 2.086 4.702-1.872 4.702zm-1.896-5.134h1.965c1.464 0 1.696-1.859-.182-1.859h-1.783v1.859zm1.854 1.454h-1.854v1.947h1.824c1.782-.001 1.673-1.947.03-1.947zm3.271-10.289c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z" />
+          </svg>
+        </a>
 
-            <!-- LinkedIn Link-->
-              <a href="http://www.linkedin.com/in/lillian-cheng-wc" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"/></svg>
-              </a>
+        <!-- LinkedIn Link-->
+        <a href="http://www.linkedin.com/in/lillian-cheng-wc" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z" />
+          </svg>
+        </a>
 
-          <!--Email-->
-            <a href="https://www.instagram.com/lilyycg/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.02c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 12.55l-5.992-4.57h11.983l-5.991 4.57zm0 1.288l-6-4.629v6.771h12v-6.771l-6 4.629z"/></svg>
-            </a>
+        <!--Email-->
+        <a href="https://www.instagram.com/lilyycg/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M12 2.02c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 12.55l-5.992-4.57h11.983l-5.991 4.57zm0 1.288l-6-4.629v6.771h12v-6.771l-6 4.629z" />
+          </svg>
+        </a>
 
 
-
-        </div>
-
-        <div class="copyright">
-          <p>Copyright &copy; Lillian Cheng 2021</p>
-        </div>
 
       </div>
-    </footer>
 
-  </body>
+      <div class="copyright">
+        <p>Copyright &copy; Lillian Cheng 2021</p>
+      </div>
 
-  </html>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>
