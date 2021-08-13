@@ -20,11 +20,36 @@ main {
   margin: 40px;
 }
 
+main .project{
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  overflow-x:scroll;
+  white-space: nowrap;
+  float:left;
+  position: relative;
+}
+
+.item {
+  display: inline-block;
+
+  
+}
+
 /* Layout Styling */
 .logo {
   padding: 0 15px;
   max-width: 90px;
   margin-top: 9px;
+}
+
+.scroll{
+  max-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
@@ -224,6 +249,23 @@ a.button.contact:hover {
   font-size: 16px;
 }
 
+a.button.select {
+  background-color: #FCE7BF;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+  border: 3px solid #000;
+  transition: 1s opacity;
+}
+
+a.button.select:hover {
+  background-color: #000;
+  color: #ffffff;
+  font-size: 16px;
+  opacity: 0.3;
+}
+
 .button-container{
   padding: 20px 0;
 }
@@ -408,6 +450,11 @@ footer p {
 
 /* Medium devices 640px+ */
 @media only screen and (min-width: 640px) {
+
+  #preview{
+    background-color: #000;
+  }
+
   .hide-mobile{
     display: block;
   }
@@ -499,6 +546,11 @@ footer p {
 /* Large devices (1024px+ )*/
 @media only screen and (min-width: 1024px) {
 
+  main .project{
+    padding: 0;
+    margin: 0;
+  }
+
   .hide-tablet{
     display: block;
   }
@@ -541,9 +593,16 @@ footer p {
     margin-top: 50px;
     font-weight: bolder;
     font-size: 24px;
-  }
+}
 
+#preview .container{
+  margin: 0;
+  padding: 0;
+}
 
+main .project{
+  padding: 0;
+}
 
   .col-lg-1 {width: 8.33%;}
   .col-lg-2 {width: 16.66%;}
@@ -567,10 +626,13 @@ footer p {
   .work_block {
     font-size: 1em;
   }
+
+
 }
 
 /* X-large devices (1440px+ */
 @media only screen and (min-width: 1440px) {
+
   #hero h1 {
     font-size: 62px;
     animation-duration: .8s;
