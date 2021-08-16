@@ -17,26 +17,20 @@ header {
 
 main {
   padding-top: 133px;
-  margin: 40px;
+  margin
 }
 
-main .project{
-  padding: 0;
+main.project{
+  padding: 50px 0 0 0;
   margin: 0;
 }
 
-.wrapper {
-  width: 100%;
-  overflow-x:scroll;
-  white-space: nowrap;
-  float:left;
-  position: relative;
-}
+
 
 .item {
   display: inline-block;
 
-  
+
 }
 
 /* Layout Styling */
@@ -444,7 +438,23 @@ footer p {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/* Project styling */
+
+.project [class*="col-"]
+{
+  padding: 0;
+  }
+
+.project .project-hero-text {
+  padding: 20px;
+}
+
+.project img{
+  display: block;
+}
+
+
+  /*----------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 
@@ -541,6 +551,34 @@ footer p {
   }
 
 }
+
+@media only screen and (min-width: 800px) {
+  .project #hero {
+    padding: 0;
+  }
+  .project-hero {
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+    margin-bottom: 0;
+  }
+
+.project-hero-text {
+  grid-column-start: 2;
+  display: flex;
+  align-items: center;
+}
+
+.project-hero-images {
+  grid-column-start: 1;
+}
+#hero .project-hero-text h1{
+  margin-top: 0;
+
+}
+}
+
 
 
 /* Large devices (1024px+ )*/

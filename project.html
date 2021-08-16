@@ -15,7 +15,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://kit.fontawesome.com/61bb5da70f.js" crossorigin="anonymous"></script>
 
@@ -48,28 +49,11 @@
   <main class="project">
     <div id="hero">
       <!--open Hero-->
-      <div class="container">
+      <div class="container-wide">
         <!--container-->
-        <div class="row">
-          <div class="col-lg-5">
-            <picture>
-              <source srcset="img/rosesio/rosesio_top@1x.png" media="(max-width:660px)">
-              <img src="img/rosesio/rosesio_top@2x.png" alt="rosesio img"></b>
-            </picture>
-
-            <picture>
-            <source srcset="img/rosesio/rosesio_bottom@1x.png" media="(max-width:660px)">
-            <img src="img/rosesio/rosesio_bottom@2x.png" alt="resesio img">
-          </picture>
-
-
-            <div class="centered-button hide-desktop hide-tablet">
-              <a href="about.html" class="button">Read more</a>
-            </div>
-          </div>
-        </div>
-
-          <div class="col-lg-7">
+        <div class="row project-hero">
+          <div class="project-hero-text">
+            <div class="project-hero-text-inside">
 
             <h1>Rosesio
               <br />E-Commerce Jewelery App
@@ -78,7 +62,21 @@
             <h5>Browse</h5>
           </div>
         </div>
+
+          <div class="project-hero-images">
+            <picture>
+              <source srcset="img/rosesio/rosesio_top@1x.png" media="(min-width:1400px)">
+              <img src="img/rosesio/rosesio_top@2x.png" alt="rosesio img">
+            </picture>
+
+            <picture>
+            <source srcset="img\rosesio\resesio_bottom@1x.png" media="(max-width:660px)">
+            <img src="img/rosesio/rosesio_bottom@2x.png" alt="resesio img">
+          </picture>
+        </div>
+      </div>
     </div>
+  </div>
 
 
       <div id="preview">
@@ -154,8 +152,21 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/scripts.js"></script>
 
-</body>
+  <script>
+  $(document).ready(function(){
+    $('.wrapper').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      centerMode: false,
+      variableWidth: true
+      });
+    });
+  </script>
 
+</body>
 </html>
